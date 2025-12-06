@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор кроссвордов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор кроссвордов</h1>
+        
+        <div class="input-section">
+            <label for="words-input">Введите слова для кроссворда (через запятую):</label>
+            <textarea id="words-input" placeholder="Например: кот, дом, солнце, книга"></textarea>
+            <button id="generate-btn">Сгенерировать кроссворд</button>
+        </div>
+        
+        <div class="settings-section">
+            <h3>Настройки оформления:</h3>
+            <div class="settings-row">
+                <label for="cell-size">Размер ячейки:</label>
+                <input type="range" id="cell-size" min="30" max="60" value="40">
+                <span id="cell-size-value">40px</span>
+            </div>
+            <div class="settings-row">
+                <label for="font-size">Размер шрифта:</label>
+                <input type="range" id="font-size" min="12" max="24" value="16">
+                <span id="font-size-value">16px</span>
+            </div>
+            <div class="settings-row">
+                <label for="theme">Цветовая тема:</label>
+                <select id="theme">
+                    <option value="light">Светлая</option>
+                    <option value="dark">Темная</option>
+                    <option value="colorful">Цветная</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="crossword-container">
+            <div id="crossword-grid"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
