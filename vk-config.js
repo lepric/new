@@ -16,7 +16,7 @@ if (!window.vkBridge && typeof vkBridge !== 'undefined') {
 // Настройка VK SDK
 if (typeof VK !== 'undefined') {
     VK.init({
-        apiId: 51670957, // Замените на ID вашего приложения
+        apiId: 54468793, 
     });
 }
 
